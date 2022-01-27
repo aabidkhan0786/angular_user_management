@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+<div class="row g-0">
+    <div class="col-10 col-md-5 mx-auto">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" name="email" [(ngModel)]="users.email">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" [(ngModel)]="users.password" name="password">
+            </div>
+            <button type="button" (click)="onLogin()" class="btn btn-sm btn-success mb-2">Sign In</button><br/>
+            <span>New User?</span>
+            <button class="btn btn-sm btn-outline-primary mx-2" type="button"  routerLink="/register">Register</button>
+        </form>
+    </div>
+</div>
